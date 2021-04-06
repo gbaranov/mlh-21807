@@ -17,7 +17,12 @@ const elements = {
     "imageFieldLabel": "//label[contains(@title, 'image')]",
     "imageField": "span.ant-upload",
     "submitButton": ".ant-btn",
-    "tryAgain": ".btn-primary"
+    "tryAgain": ".btn-primary",
+    "radioSelections": ".ant-radio-input",
+    "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
+    "ageFieldPlaceholder": "ant-input-number-input",
+    "spinnerPresents":"ant-input-number-handler-wrap",
+    "ageInput":"Age input field accepts 1 digit"
 }
 
 module.exports = elements;
