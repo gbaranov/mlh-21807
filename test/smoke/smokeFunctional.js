@@ -1,7 +1,7 @@
 import sel from '../../data/selectors';
 import exp from '../../data/expected.json';
 import {name, gender, age, story} from '../../data/testData';
-import inputValues4 from '../../helpers/methods';
+import {inputValues4, picturesUpload} from '../../helpers/methods';
 
 describe('Required fields and story created', function () {
 

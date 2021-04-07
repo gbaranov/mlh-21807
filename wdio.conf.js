@@ -18,13 +18,15 @@ exports.config = {
     //
     specs: [
         './test/extended/storyField.js',
-        './test/smoke/*.js',
-        './test/extended/ageNegative.js'
+        './test/extended/ageNegative.js',
+        './test/extended/imageField.js',
+        './test/smoke/*.js'
+
+
     ],
     // Patterns to exclude.
     exclude: [
-
-        './test/smoke/elementsExist.js',
+        './test/smoke/elementsExist.js'
 
     ],
     //

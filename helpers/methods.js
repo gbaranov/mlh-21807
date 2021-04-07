@@ -1,4 +1,5 @@
 import sel from "../data/selectors";
+import * as path from "path";
 
 function inputValues4 (name, gender, age, story){
     $(sel.nameField).setValue(name);
@@ -8,5 +9,20 @@ function inputValues4 (name, gender, age, story){
     $$(sel.storyList)[story].click();
 }
 
-module.exports = inputValues4;
+
+function picturesUpload(imageResolution){
+    const filePath = path.join(__dirname, `../data/images/${imageResolution}`);
+    const remoteFilePath = browser.uploadFile(filePath);
+    const input = $(sel.imageUpload);
+    input.addValue(remoteFilePath);
+    $(sel.submitButton).click();
+}
+
+
+module.exports = {picturesUpload, inputValues4};
+
+
+
+
+
 
