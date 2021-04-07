@@ -1,7 +1,7 @@
 import sel from "../data/selectors";
 import * as path from "path";
 
-function inputValues4 (name, gender, age, story){
+exports.inputValues4 = function inputValues4(name, gender, age, story){
     $(sel.nameField).setValue(name);
     $$(sel.radioButtons)[gender].click();
     $(sel.ageField).setValue(age);
@@ -10,7 +10,7 @@ function inputValues4 (name, gender, age, story){
 }
 
 
-function picturesUpload(imageResolution){
+exports.picturesUpload = function picturesUpload(imageResolution){
     const filePath = path.join(__dirname, `../data/images/${imageResolution}`);
     const remoteFilePath = browser.uploadFile(filePath);
     const input = $(sel.imageUpload);
@@ -19,7 +19,10 @@ function picturesUpload(imageResolution){
 }
 
 
-module.exports = {picturesUpload, inputValues4};
+
+
+
+
 
 
 

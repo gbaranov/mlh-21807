@@ -1,6 +1,6 @@
 import sel from '../../data/selectors';
 const path = require ('path');
-import picturesUpload from '../../helpers/methods';
+import {inputValues4, picturesUpload} from '../../helpers/methods';
 import {name, gender, age, story, imageResolution} from '../../data/testData'
 
 describe('Image', function () {
