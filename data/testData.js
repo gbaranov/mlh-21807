@@ -29,4 +29,16 @@ const story = {
     "comedy": 6
 }
 
-module.exports = {name, gender, age, story};
+const imageResolution = {
+    "bmp": "BMP.bmp",
+    "gif": "GIF.gif",
+    "heic": "HEIC.heic",
+    "jpeg": "JPEG.jpg",
+    "mp4": "MP4.mp4",
+    "pdf": "PDF.pdf",
+    "png": "PNG.png",
+    "tif": "TIF.tif"
+
+}
+
+module.exports = {name, gender, age, story, imageResolution};
