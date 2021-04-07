@@ -23,7 +23,9 @@ const elements = {
     "imageField": "span.ant-upload",
     "submitButton": ".ant-btn",
     "tryAgain": ".btn-primary",
-    "imageUpload": "//input[@type='file']"
+    "imageUpload": "//input[@type='file']",
+    "imagePlaceholder": ".ant-upload-select",
+    "imageName": ".ant-upload-list-item-name"
 }
 
 module.exports = elements;

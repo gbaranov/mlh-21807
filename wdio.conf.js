@@ -20,6 +20,7 @@ exports.config = {
         './test/extended/storyField.js',
         './test/extended/ageNegative.js',
         './test/extended/imageField.js',
+        './test/extended/imageUpload.js',
         './test/smoke/*.js'
 
 
