@@ -9,3 +9,4 @@ function inputValues4 (name, gender, age, story){
 }
 
 module.exports = inputValues4;
+

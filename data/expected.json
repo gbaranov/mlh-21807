@@ -4,5 +4,14 @@
   "instruction": "Let's create your own HERO! It's super easy with our application!",
   "nameLabel": "1.What is your Hero's name?",
   "storyHeader": "Two Cats And A Little Green Man 009",
-  "storyMoral": "Moral: When you quarrel amongst yourselves, someone else gains from it."
+  "storyMoral": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
+  "storyPlaceholder": "Type of the story",
+  "countOfStories": 7,
+  "story1": "Overcoming the Monster",
+  "story2": "Rebirth",
+  "story3": "Quest",
+  "story4": "Journey and Return",
+  "story5": "Rags and Riches",
+  "story6": "Tragedy",
+  "story7": "Comedy"
 }
