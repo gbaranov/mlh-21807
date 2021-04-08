@@ -100,14 +100,14 @@ describe('Required fields and story created', function () {
         });
     });
 
+    it('TC-047 User can switch the option: he->she', function () {
+        $$(sel.radioSelections)[0].click();
+        $$(sel.radioSelections)[1].click();
+        let radio = $$(sel.radioSelections)[1].isSelected();
+        expect(radio).toEqual(true);
 
-it('TC-047 User can switch the option: he->she', function () {
-    $$(sel.radioSelections)[0].click();
-    $$(sel.radioSelections)[1].click();
-    let radio = $$(sel.radioSelections)[1].isSelected();
-    expect(radio).toEqual(true);
+    });
 
-});
     it('TC-048 User can switch the option: he->it', function () {
         $$(sel.radioSelections)[0].click();
         $$(sel.radioSelections)[2].click();

@@ -22,7 +22,7 @@ describe('Age field suit', function () {
             expect(errorMessage).toEqual(true);
         });
 
-        //  Untill bug fixed
+        //  Until bug fixed
         // it('TC-067 Age input field accepts empty Age field', function () {
         //     $(sel.age).click();
         //     $(sel.name).click()

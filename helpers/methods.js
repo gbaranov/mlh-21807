@@ -20,6 +20,16 @@ exports.picturesUpload = function picturesUpload(imageResolution){
     $(sel.submitButton).click();
 }
 
+
+exports.picturesUploadN = function picturesUpload(imageResolution){
+    const filePath = path.join(__dirname, `../data/images/${imageResolution}`);
+    const remoteFilePath = browser.uploadFile(filePath);
+    const input = $(sel.imageUpload);
+    input.addValue(remoteFilePath);
+    //$(sel.submitButton).click();
+}
+
+
 exports.uploadImage = function uploadImage(imageName) {
     const imageUpload = $(sel.imageUpload);
     browser.execute(

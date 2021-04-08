@@ -6,7 +6,8 @@ const name = {
     "symbolsInNameField": "!@#$%^&*()/",
     "sqlXml": "<LittleGreenMan009>",
     "maxAmountLetters": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwwww",
-    "overRequiredAmount": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwww71"
+    "overRequiredAmount": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwww71",
+    "empty": ""
 }
 
 const gender = {
