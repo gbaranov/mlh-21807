@@ -3,6 +3,7 @@
   "header": "My Little Hero",
   "instruction": "Let's create your own HERO! It's super easy with our application!",
   "nameLabel": "1.What is your Hero's name?",
+  "namePlaceholder": "Hero's name",
   "storyHeader": "Two Cats And A Little Green Man 009",
   "storyMoral": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
   "storyPlaceholder": "Type of the story",
@@ -15,5 +16,14 @@
   "story6": "Tragedy",
   "story7": "Comedy",
   "imageError": "You can only upload JPG/PNG file!",
-  "imageSizeError": "Image must be smaller than 4MB!"
+  "imageSizeError": "Image must be smaller than 4MB!",
+  "imagePlaceholder": "Click or drag and drop",
+  "heIsPresent" : "He He",
+  "sheIsPresent" : "She She",
+  "itIsPresent" : "It It",
+  "its" : "its",
+  "his" : "his",
+  "her" : "her",
+  "imageWidth" : "200",
+  "imageHeight" : "200"
 }

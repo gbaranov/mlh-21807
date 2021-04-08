@@ -1,4 +1,5 @@
 import sel from '../../data/selectors';
+import exp from '../../data/expected.json';
 const path = require ('path');
 import {inputValues4, picturesUpload} from '../../helpers/methods';
 import {name, gender, age, story, imageResolution} from '../../data/testData';
@@ -7,7 +8,7 @@ import exp from '../../data/expected.json';
 
 describe('Image', function () {
 
-    before('Open App', function () {
+    beforeEach('Open App', function () {
         browser.url('');
     });
 
@@ -21,9 +22,8 @@ describe('Image', function () {
 
     });
 
-    describe('Upload File, negative', () => {
-
-        it('TC-112 Upload 4.5 mb JPEG file', () => {
+    describe('Upload File', () => {
+        it('TC-112 Upload  4.5 mb JPEG file', () => {
             picturesUpload(imageResolution.jpeg);
             let error = $('.ant-message-error').getText();
             expect(error).toEqual(exp.imageSizeError);
@@ -70,6 +70,41 @@ describe('Image', function () {
             let error = $('.ant-message-error').getText();
             expect(error).toEqual(exp.imageError);
         });
+
+        it('TC-127 Drag and drop HEIC file', () => {
+
+        });
+
+        it('TC-128 Upload TGA file', () => {
+            picturesUpload(imageResolution.tga);
+            let error = $('.ant-message-error').getText();
+            expect(error).toEqual(exp.imageError);
+        });
+
+
+        it('TC-130 Upload XPM file', () => {
+            picturesUpload(imageResolution.xpm);
+            let error = $('.ant-message-error').getText();
+            expect(error).toEqual(exp.imageError);
+        });
+
+
+        it.skip('TC-132 User can upload only one JPEG image file', () => {
+            picturesUpload(imageResolution.jpgUnder4);
+            picturesUpload(imageResolution.jpgUnder4);
+            let error = $('.ant-message-error');
+            expect(error).toBeDisplayed();
+        });
+
+
+        it.skip('TC-134 User can upload only one PNG image file', () => {
+            picturesUpload(imageResolution.pngUnder4);
+            picturesUpload(imageResolution.pngUnder4);
+            let error = $('.ant-message-error');
+            expect(error).toBeDisplayed();
+        });
+
+
     });
 });
 
