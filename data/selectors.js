@@ -6,10 +6,15 @@ const elements = {
     "genderRadioLabel": "//label[@for='gender']",
     "genderRadioButtons": "#gender",
     "radioButtons": ".ant-radio",
+    "age":"#age",
+    "ageError": '//div[contains(@class, "ant-form-item-with-help")][.//input[@id="age"]]//div[@role="alert"]',
     "ageLabel": "//label[@for='age']",
     "ageField": "#age",
+    "ageSpinnerUp": ".ant-input-number-handler-up-inner",
+    "ageSpinnerDown": ".ant-input-number-handler-down-inner",
     "storyTypeLabel": "//label[@for='story']",
-    "storyTypeDropdown": ".ant-select-selector",
+    "story": ".ant-select-selector",
+    "storyDropdown": "#story",
     "storyType": ".ant-select-selector",
     "storyList": ".ant-select-item",
     "storyHeader": ".mb-4",
@@ -22,7 +27,10 @@ const elements = {
     "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
     "ageFieldPlaceholder": "ant-input-number-input",
     "spinnerPresents":"ant-input-number-handler-wrap",
-    "ageInput":"Age input field accepts 1 digit"
+    "ageInput":"Age input field accepts 1 digit",
+    "imageUpload": "//input[@type='file']",
+    "imagePlaceholder": ".ant-upload-select",
+    "imageName": ".ant-upload-list-item-name"
 }
 
 module.exports = elements;

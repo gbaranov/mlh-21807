@@ -22,7 +22,12 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-    '.test/smoke/elementsExist.js'
+//         './test/extended/imageField.js',
+//         './test/smoke/elementsExist.js',
+//         './test/extended/storyField.js',
+//         './test/extended/ageNegative.js',
+//         './test/smoke/*.js'
+
     ],
     //
     // ============
@@ -67,7 +72,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
