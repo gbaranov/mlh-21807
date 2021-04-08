@@ -99,7 +99,7 @@ describe('Required fields and story created', function () {
             expect(radioButtonIsGray).toEqual(false);
         });
     });
-});
+
 
 it('TC-047 User can switch the option: he->she', function () {
     $$(sel.radioSelections)[0].click();
@@ -147,4 +147,3 @@ it('TC-047 User can switch the option: he->she', function () {
 
 });
 
-});
