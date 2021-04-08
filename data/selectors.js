@@ -23,6 +23,11 @@ const elements = {
     "imageField": "span.ant-upload",
     "submitButton": ".ant-btn",
     "tryAgain": ".btn-primary",
+    "radioSelections": ".ant-radio-input",
+    "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
+    "ageFieldPlaceholder": "ant-input-number-input",
+    "spinnerPresents":"ant-input-number-handler-wrap",
+    "ageInput":"Age input field accepts 1 digit",
     "imageUpload": "//input[@type='file']",
     "imagePlaceholder": ".ant-upload-select",
     "imageName": ".ant-upload-list-item-name"
