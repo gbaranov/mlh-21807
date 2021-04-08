@@ -3,6 +3,7 @@ const elements = {
     "instruction": "p",
     "nameLabel": "//label[@for='name']",
     "nameField": "#name",
+    "nameError": '//div[contains(@class, "ant-form-item-with-help")][.//input[@id="name"]]//div[@role="alert"]',
     "genderRadioLabel": "//label[@for='gender']",
     "genderRadioButtons": "#gender",
     "radioButtons": ".ant-radio",
