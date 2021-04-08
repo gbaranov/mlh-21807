@@ -1,5 +1,12 @@
 const name = {
-    "default": "Little Green Man 009"
+    "default": "Little Green Man 009",
+    "nameOnlyLetters": "LittleGreenMan",
+    "spacesBeforeName": "   Little Green Man 009",
+    "spacesAfterName": "Little Green Man 009   ",
+    "symbolsInNameField": "!@#$%^&*()/",
+    "sqlXml": "<LittleGreenMan009>",
+    "maxAmountLetters": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwwww",
+    "overRequiredAmount": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwww71"
 }
 
 const gender = {
