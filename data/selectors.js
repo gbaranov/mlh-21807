@@ -31,7 +31,11 @@ const elements = {
     "ageInput":"Age input field accepts 1 digit",
     "imageUpload": "//input[@type='file']",
     "imagePlaceholder": ".ant-upload-select",
-    "imageName": ".ant-upload-list-item-name"
+    "imageName": ".ant-upload-list-item-name",
+    "resetButton" : ".btn-primary",
+    "storyTitle" : ".mb-4",
+    "storyMoral" : ".ant-card-body > p:nth-child(5)",
+    "imageStoryPage" : "[alt='hero_picture']",
 }
 
 module.exports = elements;

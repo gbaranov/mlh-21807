@@ -58,7 +58,9 @@ const image = {
     "imageJPEG2MB": "JPG_2MB.jpg",
     "imagePNG2MB": "PNG_2MB.png",
     "imagePNG3MB": "PNG_3MB.png",
-    "imageJPEG3MB": "JPG_3MB.jpg"
+    "imageJPEG3MB": "JPG_3MB.jpg",
+    "squereOverSize" :  "../../data/images/squere250x250.png",
+    "rctnglarOverSize" : "../../data/images/rctnglar1400x400.png"
 }
 
 
