@@ -59,7 +59,7 @@ describe('Name field positive test cases', function () {
     });
 
     it('TC-0155 Image is present', () => {
-        let img =$(selectors.imageStoryPage).isDisplayed();
+        let img =$(selectors.imageStoryPage).waitForDisplayed();
         expect(img).toEqual(true)
     });
 
