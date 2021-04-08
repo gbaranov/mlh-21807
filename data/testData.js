@@ -37,7 +37,11 @@ const imageResolution = {
     "mp4": "MP4.mp4",
     "pdf": "PDF.pdf",
     "png": "PNG.png",
-    "tif": "TIF.tif"
+    "tif": "TIF.tif",
+    "tga": "file.tga",
+    "xpm": "file.xpm",
+    "jpgUnder4": "jpg_under4.jpeg",
+    "pngUnder4": "png_under4.png"
 
 }
 
