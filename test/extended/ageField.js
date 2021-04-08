@@ -6,7 +6,9 @@ describe('Required fields and story created', function () {
     before('Open App', function () {
         browser.url('');
     });
-
+    beforeEach(function () {
+        browser.refresh();
+    });
     it('TC-053 Not chosen button / Required', function () {
     $(sel.nameField). getText();
     $(sel.ageField). getText();
@@ -25,35 +27,53 @@ describe('Required fields and story created', function () {
     expect(spinner).toEqual(true);
 });
     it('TC-056 Age input field accepts 1 digit', function () {
-        let radio = $(sel.ageInput).isElementSelected('1');
-        expect(radio).toEqual(true);
+        $(sel.age).setValue("3");
+        let err = $(sel.error).isDisplayed();
+        expect(err).toEqual(false);
     });
     it('TC-057 Age input field accepts 12 digits', function () {
-        let radio = $(sel.ageInput).isElementSelected('999999999999');
-        expect(radio).toEqual(true);
+        $(sel.age).setValue('999999999999');
+        let err = $(sel.error).isDisplayed();
+        expect(err).toEqual(false);
     });
     it('TC-058 Age input field accepts any digits in range 1-12', function () {
-        let radio = $(sel.ageInput).isElementSelected('1234567890');
-        expect(radio).toEqual(true);
+        $(sel.age).setValue("12456789123");
+        let err = $(sel.error).isDisplayed();
+        expect(err).toEqual(false);
     });
     it('TC-059 Age input field accepts 0 before digits', function () {
-        let radio = $(sel.ageInput).isElementSelected('09');
-        expect(radio).toEqual(true);
+        $(sel.age).setValue("09");
+       $(sel.nameField).click();
+       let value = $(sel.age).getValue();
+       expect(value).toEqual("9");
+
     });
     it('TC-060 Age input field accepts spaces', function () {
-        let radio = $(sel.ageInput).getHeapSpaceStatistics('3 2');
-        expect(radio).toEqual(true);
+        $(sel.age).setValue(" 9 9");
+        let value = $(sel.age).getValue();
+        expect(value).toEqual("99");
     });
     it('TC-061 Clicking up the spinner increases empty Age input field', function () {
-        let radio = $(sel.ageFieldPlaceholder).click();
-        expect(radio).toEqual(true);
+        $(sel.spinnerUp).click();
+        let value = $(sel.ageField).getValue();
+        expect(value).toEqual("1");
     });
     it('TC-062 Clicking up the spinner increases the digit', function () {
-        let radio = $(sel.ageFieldPlaceholder).click();
-        expect(radio).toEqual(true);
+        $(sel.ageField).setValue("9");
+        $(sel.spinnerUp).click();
+        let value = $(sel.ageField).getValue();
+        expect(value).toEqual("10");
     });
     it('TC-063 Clicking down the spinner decreases the digit', function () {
-        let radio = $(sel.ageFieldPlaceholder).click();
-        expect(radio).toEqual(true);
+        $(sel.spinnerDown).click();
+        let value = $(sel.ageField).getValue();
+        expect(value).toEqual("-1");
+    });
+    it('TC-064 Error appears when user decreases empty age field', function () {
+        $(sel.spinnerDown).click();
+        $(sel.error).waitForDisplayed();
+        let err = $(sel.error).isDisplayed();
+        expect(err).toEqual(true);
     });
 });
+

@@ -21,7 +21,10 @@ const elements = {
     "radioSelections": ".ant-radio-input",
     "ageFieldPlaceholder": ".ant-input-number-input",
     "spinnerAge":".ant-input-number-handler-wrap",
-    "ageInput":"Age input field accepts 1 digit"
+    "spinnerUp": ".anticon-up",
+    "spinnerDown": ".anticon-down",
+    "age":"#age",
+    "error": ".ant-form-item-explain-error"
 }
 
 module.exports = elements;
