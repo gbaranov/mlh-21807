@@ -45,4 +45,15 @@ const imageResolution = {
 
 }
 
-module.exports = {name, gender, age, story, imageResolution};
+const image = {
+    "title": "title",
+    "imagesFolderPath": "../data/images/",
+    "imageJPEG2MB": "JPG_2MB.jpg",
+    "imagePNG2MB": "PNG_2MB.png",
+    "imagePNG3MB": "PNG_3MB.png",
+    "imageJPEG3MB": "JPG_3MB.jpg"
+}
+
+
+
+module.exports = {name, gender, age, story, imageResolution, image};
