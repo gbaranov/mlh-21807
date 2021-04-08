@@ -16,6 +16,7 @@
   "story6": "Tragedy",
   "story7": "Comedy",
   "imageError": "You can only upload JPG/PNG file!",
+  "imageSizeError": "Image must be smaller than 4MB!",
   "imagePlaceholder": "Click or drag and drop",
   "heIsPresent" : "He He",
   "sheIsPresent" : "She She",
