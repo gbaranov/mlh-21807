@@ -6,7 +6,8 @@ const name = {
     "symbolsInNameField": "!@#$%^&*()/",
     "sqlXml": "<LittleGreenMan009>",
     "maxAmountLetters": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwwww",
-    "overRequiredAmount": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwww71"
+    "overRequiredAmount": "wwwwwwwwwwwwwwwwww20wwwwwwwwwwwwwwwwww40wwwwwwwwwwwwwwwwww60wwwwwwwww71",
+    "empty": ""
 }
 
 const gender = {
@@ -36,4 +37,33 @@ const story = {
     "comedy": 6
 }
 
-module.exports = {name, gender, age, story};
+const imageResolution = {
+    "bmp": "BMP.bmp",
+    "gif": "GIF.gif",
+    "heic": "HEIC.heic",
+    "jpeg": "JPEG.jpg",
+    "mp4": "MP4.mp4",
+    "pdf": "PDF.pdf",
+    "png": "PNG.png",
+    "tif": "TIF.tif",
+    "tga": "file.tga",
+    "xpm": "file.xpm",
+    "jpgUnder4": "jpg_under4.jpeg",
+    "pngUnder4": "png_under4.png"
+
+}
+
+const image = {
+    "title": "title",
+    "imagesFolderPath": "../data/images/",
+    "imageJPEG2MB": "JPG_2MB.jpg",
+    "imagePNG2MB": "PNG_2MB.png",
+    "imagePNG3MB": "PNG_3MB.png",
+    "imageJPEG3MB": "JPG_3MB.jpg",
+    "squereOverSize" :  "../../data/images/squere250x250.png",
+    "rctnglarOverSize" : "../../data/images/rctnglar1400x400.png"
+}
+
+
+
+module.exports = {name, gender, age, story, imageResolution, image};

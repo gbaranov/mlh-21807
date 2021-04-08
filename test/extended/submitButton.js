@@ -1,6 +1,8 @@
 import sel from '../../data/selectors';
 import exp from '../../data/expected.json';
 const path = require('path');
+import {inputValues4, picturesUpload, picturesUploadN} from '../../helpers/methods';
+import {name, gender, age, story, imageResolution} from '../../data/testData';
 
 
 describe('Submit Button', function () {

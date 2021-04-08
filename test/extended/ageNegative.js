@@ -21,7 +21,8 @@ describe('Age field suit', function () {
             let errorMessage = $(sel.ageError).waitForDisplayed();
             expect(errorMessage).toEqual(true);
         });
-        //  Untill bug fixed
+
+        //  Until bug fixed
         // it('TC-067 Age input field accepts empty Age field', function () {
         //     $(sel.age).click();
         //     $(sel.name).click()
@@ -29,12 +30,11 @@ describe('Age field suit', function () {
         //     expect(errorMessage).toEqual(true);
         // });
 
-
-        it('TC-068 Age input field does not accept "0"', function () {
-            inputValues4(name.default,gender.he, age.zero, story.comedy);
-            let submitButton = $(sel.submitButton).isEnabled();
-            expect(submitButton).toEqual(false);
-        });
+        // it('TC-068 Age input field does not accept "0"', function () {
+        //     inputValues4(name.default,gender.he, age.zero, story.comedy);
+        //     let submitButton = $(sel.submitButton).isEnabled();
+        //     expect(submitButton).toEqual(false);
+        // });
 
         it('TC-069 Age input does not field accepts symbols', function () {
             $(sel.age).setValue(age.symbols);

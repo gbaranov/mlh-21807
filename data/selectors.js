@@ -23,7 +23,19 @@ const elements = {
     "imageFieldLabel": "//label[contains(@title, 'image')]",
     "imageField": "span.ant-upload",
     "submitButton": ".ant-btn",
-    "tryAgain": ".btn-primary"
+    "tryAgain": ".btn-primary",
+    "radioSelections": ".ant-radio-input",
+    "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
+    "ageFieldPlaceholder": "ant-input-number-input",
+    "spinnerPresents":"ant-input-number-handler-wrap",
+    "ageInput":"Age input field accepts 1 digit",
+    "imageUpload": "//input[@type='file']",
+    "imagePlaceholder": ".ant-upload-select",
+    "imageName": ".ant-upload-list-item-name",
+    "resetButton" : ".btn-primary",
+    "storyTitle" : ".mb-4",
+    "storyMoral" : ".ant-card-body > p:nth-child(5)",
+    "imageStoryPage" : "[alt='hero_picture']",
 }
 
 module.exports = elements;
