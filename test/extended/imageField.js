@@ -66,7 +66,7 @@ describe('Image', function () {
         });
 
 
-        it('TC-132 User can upload only one JPEG image file', () => {
+        it.skip('TC-132 User can upload only one JPEG image file', () => {
             picturesUpload(imageResolution.jpgUnder4);
             picturesUpload(imageResolution.jpgUnder4);
             let error = $('.ant-message-error');
@@ -74,7 +74,7 @@ describe('Image', function () {
         });
 
 
-        it('TC-134 User can upload only one PNG image file', () => {
+        it.skip('TC-134 User can upload only one PNG image file', () => {
             picturesUpload(imageResolution.pngUnder4);
             picturesUpload(imageResolution.pngUnder4);
             let error = $('.ant-message-error');
