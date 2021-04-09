@@ -30,7 +30,7 @@ const elements = {
     "spinnerUp": ".anticon-up",
     "spinnerDown": ".anticon-down",
     "age":"#age",
-    "error": ".ant-form-item-explain-error"
+    "error": ".ant-form-item-explain-error",
     "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
     "ageFieldPlaceholder": "ant-input-number-input",
     "spinnerPresents":"ant-input-number-handler-wrap",
