@@ -4,6 +4,7 @@ const path = require('path');
 import {inputValues4, picturesUpload, picturesUploadN} from '../../helpers/methods';
 import {name, gender, age, story, imageResolution} from '../../data/testData';
 
+
 describe('Submit Button', function () {
 
     beforeEach('Open App', function () {

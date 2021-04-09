@@ -17,21 +17,12 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-         './test/smoke/*.js',
-         './test/extended/*.js'
+       './test/smoke/*.js',
+       './test/extended/*.js'
     ],
     // Patterns to exclude.
     exclude: [
-        // './test/extended/imageField.js',
-        // './test/smoke/elementsExist.js',
-        // './test/extended/storyField.js',
-        // './test/extended/ageNegative.js',
-        // './test/extended/genderField.js',
-        // './test/extended/ageField.js',
-        // './test/extended/imageUpload.js',
-        // './test/extended/submitButton.js',
-        // './test/smoke/*.js'
-
+        //'./test/extended/imageField.js'
     ],
     //
     // ============
