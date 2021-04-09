@@ -25,6 +25,12 @@ const elements = {
     "submitButton": ".ant-btn",
     "tryAgain": ".btn-primary",
     "radioSelections": ".ant-radio-input",
+    "ageFieldPlaceholder": ".ant-input-number-input",
+    "spinnerAge":".ant-input-number-handler-wrap",
+    "spinnerUp": ".anticon-up",
+    "spinnerDown": ".anticon-down",
+    "age":"#age",
+    "error": ".ant-form-item-explain-error"
     "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
     "ageFieldPlaceholder": "ant-input-number-input",
     "spinnerPresents":"ant-input-number-handler-wrap",
@@ -35,7 +41,7 @@ const elements = {
     "resetButton" : ".btn-primary",
     "storyTitle" : ".mb-4",
     "storyMoral" : ".ant-card-body > p:nth-child(5)",
-    "imageStoryPage" : "[alt='hero_picture']",
+    "imageStoryPage" : "[alt='hero_picture']"
 }
 
 module.exports = elements;
