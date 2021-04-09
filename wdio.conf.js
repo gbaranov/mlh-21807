@@ -17,7 +17,6 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        //'./test/extended/imageField.js'
          './test/smoke/*.js',
          './test/extended/*.js'
     ],
