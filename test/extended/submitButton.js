@@ -33,7 +33,14 @@ describe('Submit Button', function () {
 
     it('TC-145 Required fields are not filled', function () {
         inputValues4(name.empty, gender.he, age.default, story.comedy);
-        browser.pause(5000)
+        let submitButton = $(sel.submitButton).isEnabled();
+        expect(submitButton).toEqual(false);
+    });
+
+
+    it('TC-146 Submit button changes its state disabled when Name Field is been cleared', function () {
+        inputValues4(name.empty, gender.he, age.default, story.comedy);
+        $(sel.nameField).clearValue();
         let submitButton = $(sel.submitButton).isEnabled();
         expect(submitButton).toEqual(false);
     });
