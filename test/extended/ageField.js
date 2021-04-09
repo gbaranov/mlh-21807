@@ -9,14 +9,15 @@ describe('Required fields and story created', function () {
     beforeEach(function () {
         browser.refresh();
     });
+
     it('TC-053 Not chosen button / Required', function () {
-    $(sel.nameField). getText();
-    $(sel.ageField). getText();
-    $(sel.storyTypeDropdown).getText();
-    $(sel.submitButton).click();
-    let submitButton = $(sel.submitButton).isEnabled();
-    expect(submitButton).toEqual(false);
-});
+        $(sel.nameField). getText();
+        $(sel.ageField). getText();
+        $(sel.storyTypeDropdown).getText();
+        $(sel.submitButton).click();
+        let submitButton = $(sel.submitButton).isEnabled();
+        expect(submitButton).toEqual(false);
+    });
 
     it('TC-054 Age Field placeholder Hero\'s age', function () {
     let radio = $(sel.ageFieldPlaceholder).getAttribute('placeholder');
