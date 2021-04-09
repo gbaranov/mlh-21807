@@ -11,10 +11,10 @@ describe('Required fields and story created', function () {
     });
 
     it('TC-053 Not chosen button / Required', function () {
-        $(sel.nameField). getText();
-        $(sel.ageField). getText();
-        $(sel.storyTypeDropdown).getText();
-        $(sel.submitButton).click();
+        $(sel.nameField).setValue("test");
+        $(sel.ageField).setValue(12);
+        $(sel.storyType).click();
+        $$(sel.storyList)[1].click();
         let submitButton = $(sel.submitButton).isEnabled();
         expect(submitButton).toEqual(false);
     });
