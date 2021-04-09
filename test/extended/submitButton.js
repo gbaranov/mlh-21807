@@ -37,7 +37,6 @@ describe('Submit Button', function () {
         expect(submitButton).toEqual(false);
     });
 
-
     it('TC-146 Submit button changes its state disabled when Name Field is been cleared', function () {
         inputValues4(name.empty, gender.he, age.default, story.comedy);
         $(sel.nameField).clearValue();
