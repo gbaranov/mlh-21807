@@ -59,7 +59,7 @@ import exp from '../../data/expected.json';
         });
 
         it('TC-011 Story Type dropdown is present', function () {
-            let dropdown = $(sel.storyTypeDropdown).isDisplayed();
+            let dropdown = $(sel.story).isDisplayed();
             expect(dropdown).toEqual(true);
         });
 

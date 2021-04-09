@@ -3,13 +3,19 @@ const elements = {
     "instruction": "p",
     "nameLabel": "//label[@for='name']",
     "nameField": "#name",
+    "nameError": '//div[contains(@class, "ant-form-item-with-help")][.//input[@id="name"]]//div[@role="alert"]',
     "genderRadioLabel": "//label[@for='gender']",
     "genderRadioButtons": "#gender",
     "radioButtons": ".ant-radio",
+    "age":"#age",
+    "ageError": '//div[contains(@class, "ant-form-item-with-help")][.//input[@id="age"]]//div[@role="alert"]',
     "ageLabel": "//label[@for='age']",
     "ageField": "#age",
+    "ageSpinnerUp": ".ant-input-number-handler-up-inner",
+    "ageSpinnerDown": ".ant-input-number-handler-down-inner",
     "storyTypeLabel": "//label[@for='story']",
-    "storyTypeDropdown": ".ant-select-selector",
+    "story": ".ant-select-selector",
+    "storyDropdown": "#story",
     "storyType": ".ant-select-selector",
     "storyList": ".ant-select-item",
     "storyHeader": ".mb-4",
@@ -25,6 +31,17 @@ const elements = {
     "spinnerDown": ".anticon-down",
     "age":"#age",
     "error": ".ant-form-item-explain-error"
+    "radioGroupBtn": "ant-radio-group ant-radio-group-outline",
+    "ageFieldPlaceholder": "ant-input-number-input",
+    "spinnerPresents":"ant-input-number-handler-wrap",
+    "ageInput":"Age input field accepts 1 digit",
+    "imageUpload": "//input[@type='file']",
+    "imagePlaceholder": ".ant-upload-select",
+    "imageName": ".ant-upload-list-item-name",
+    "resetButton" : ".btn-primary",
+    "storyTitle" : ".mb-4",
+    "storyMoral" : ".ant-card-body > p:nth-child(5)",
+    "imageStoryPage" : "[alt='hero_picture']"
 }
 
 module.exports = elements;
